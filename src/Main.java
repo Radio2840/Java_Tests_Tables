@@ -16,6 +16,13 @@ Main {
         System.out.println(singleLinkedList.search(2137));
         singleLinkedList.display();
 
+        DoubleLinkedList list2 = new DoubleLinkedList();
+        list2.add(123000);
+        list2.add(4);
+        list2.add(65);
+        list2.add(3);
+        list2.remove(4);
+        list2.display();
     }
 
 

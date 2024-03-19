@@ -1,31 +1,27 @@
-public class SingleLinkedList {
-    private ListNode head;
+public class DoubleLinkedList {
+    ListNode2 head=null;
 
-    public SingleLinkedList() {
-        this.head = null;
-    }
-
-    // Funkcja która dodaje wartości do tablicy
     public void add(int value) {
-        ListNode newNode = new ListNode(value);
+        ListNode2 newNode = new ListNode2(value);
         if (head == null) {
             head = newNode;
         } else {
-            ListNode current = head;
+            ListNode2 current = head;
             while (current.nextNode != null) {
                 current = current.nextNode;
             }
+
+            newNode.previousNode=current;
             current.nextNode = newNode;
         }
     }
 
-    // funkcja wyświetlająca wartości w tablicy
     public void display() {
         if (head==null){
             System.out.print("[]\n");
             return;
         }
-        ListNode current = head;
+        ListNode2 current = head;
         System.out.print("[");
         while (current.nextNode != null) {
             System.out.print(STR."\{current.value}, ");
@@ -34,37 +30,31 @@ public class SingleLinkedList {
         System.out.print(STR."\{current.value}]\n");
     }
 
-    // funkcja która usuwa wybrany element w tablicy
     public void remove(int value) {
-        if (head == null) {
-            System.out.println("Tablica jest pusta");
-            return;
-        }
         if (head.value == value) {
             head = head.nextNode;
+            head.previousNode = null;
             return;
         }
-        ListNode current = head;
+        ListNode2 current = head;
         while (current.nextNode != null) {
             if (current.nextNode.value == value) {
                 current.nextNode = current.nextNode.nextNode;
+                current.nextNode.previousNode = current;
                 return;
             }
             current = current.nextNode;
         }
     }
 
-    // funkcja która wyszukuje pierwsze wystąpienie elementu i go zwraca
-
-    public ListNode search(int value) {
-        ListNode current = head;
-        while (current.nextNode != null) {
-            if (current.nextNode.value == value) {
-                return current.nextNode;
+    public ListNode2 search(int value) {
+        ListNode2 current = head;
+        while (current != null) {
+            if (current.value == value) {
+                return current;
             }
             current = current.nextNode;
         }
-        System.out.println("Nie znaleziono");
         return null;
     }
 }
