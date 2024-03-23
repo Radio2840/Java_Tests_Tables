@@ -6,7 +6,7 @@ public class DoubleLinkedList {
         if (head == null) {
             head = newNode;
         } else {
-            ListNode2 current = head;
+            ListNode2 current = head;S
             while (current.nextNode != null) {
                 current = current.nextNode;
             }
