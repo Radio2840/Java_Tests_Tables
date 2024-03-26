@@ -6,7 +6,7 @@ public class DoubleLinkedList {
         if (head == null) {
             head = newNode;
         } else {
-            ListNode2 current = head;S
+            ListNode2 current = head;
             while (current.nextNode != null) {
                 current = current.nextNode;
             }
@@ -24,10 +24,10 @@ public class DoubleLinkedList {
         ListNode2 current = head;
         System.out.print("[");
         while (current.nextNode != null) {
-            System.out.print(STR."\{current.value}, ");
+            System.out.print(current.value+", ");
             current = current.nextNode;
         }
-        System.out.print(STR."\{current.value}]\n");
+        System.out.print(current.value+"]\n");
     }
 
     public void remove(int value) {

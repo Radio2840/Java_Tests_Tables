@@ -28,10 +28,10 @@ public class SingleLinkedList {
         ListNode current = head;
         System.out.print("[");
         while (current.nextNode != null) {
-            System.out.print(STR."\{current.value}, ");
+            System.out.print(current.value+", ");
             current = current.nextNode;
         }
-        System.out.print(STR."\{current.value}]\n");
+        System.out.print(current.value+"]\n");
     }
 
     // funkcja która usuwa wybrany element w tablicy
