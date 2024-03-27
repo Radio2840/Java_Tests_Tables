@@ -1,8 +1,8 @@
 /**
- * Klasa która jest reprezętacją pojedyńczej wartości w tablicy
- * Zawieta ona pola:
- * value - wartość liczbowa dla pojedyńczego elementu tablicy
- * nextNode - wartość która jest elementem tablicy która wskazuje na następny element
+ * A class which is a reprezition of a single value in a one-way list.
+ * It contains fields:
+ * value -field of numeric type
+ * nextNode - field which is of type ListNode and stores the next ListNode object | default:null
  * **/
 
 

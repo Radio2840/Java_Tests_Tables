@@ -1,11 +1,16 @@
+/**
+ * class that represents a one-way list
+ * It contains a field such as:
+ * head - which is the beginning of the list
+ * **/
+
 public class SingleLinkedList {
     private ListNode head;
 
     public SingleLinkedList() {
         this.head = null;
     }
-
-    // Funkcja która dodaje wartości do tablicy
+    // adding node on the end of the list
     public void add(int value) {
         ListNode newNode = new ListNode(value);
         if (head == null) {
@@ -19,7 +24,7 @@ public class SingleLinkedList {
         }
     }
 
-    // funkcja wyświetlająca wartości w tablicy
+    // displaying all elements of the list
     public void display() {
         if (head==null){
             System.out.print("[]\n");
@@ -34,7 +39,7 @@ public class SingleLinkedList {
         System.out.print(current.value+"]\n");
     }
 
-    // funkcja która usuwa wybrany element w tablicy
+    // deleting one of the nodes
     public void remove(int value) {
         if (head == null) {
             System.out.println("Tablica jest pusta");
@@ -54,8 +59,8 @@ public class SingleLinkedList {
         }
     }
 
-    // funkcja która wyszukuje pierwsze wystąpienie elementu i go zwraca
 
+    // searching for value in the list
     public ListNode search(int value) {
         ListNode current = head;
         while (current.nextNode != null) {
