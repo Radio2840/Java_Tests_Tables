@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0d0eefc-e2d1-468b-bfe7-cde10b73aa15" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/numbers.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResultsAndDocumentation/PJ Zadanie Sprawozdanie.docx" beforeDir="false" afterPath="$PROJECT_DIR$/ResultsAndDocumentation/PJ Zadanie Sprawozdanie.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListNode2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListNode2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SingleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +58,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Documents\GitHub\Java_Tests_Tables\src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main_run" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -92,6 +93,7 @@
       <workItem from="1711041693711" duration="614000" />
       <workItem from="1711182092475" duration="1762000" />
       <workItem from="1711553062844" duration="1672000" />
+      <workItem from="1711615123255" duration="1287000" />
     </task>
     <servers />
   </component>
