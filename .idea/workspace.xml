@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d0eefc-e2d1-468b-bfe7-cde10b73aa15" name="Changes" comment="" />
+    <list default="true" id="e0d0eefc-e2d1-468b-bfe7-cde10b73aa15" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ResultsAndDocumentation/Dane.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResultsAndDocumentation/PJ Zadanie Sprawozdanie.docx" beforeDir="false" afterPath="$PROJECT_DIR$/ResultsAndDocumentation/PJ Zadanie Sprawozdanie.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/numbers.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +61,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Documents\GitHub\Java_Tests_Tables\ResultsAndDocumentation" />
       <recent name="C:\Users\ASUS\Documents\GitHub\Java_Tests_Tables\src" />
     </key>
   </component>
@@ -91,6 +97,7 @@
       <workItem from="1711553062844" duration="1672000" />
       <workItem from="1711615123255" duration="1287000" />
       <workItem from="1711616461895" duration="58000" />
+      <workItem from="1711714477439" duration="1229000" />
     </task>
     <servers />
   </component>
