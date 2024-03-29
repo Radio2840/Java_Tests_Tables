@@ -69,7 +69,6 @@ public class SingleLinkedList {
             }
             current = current.nextNode;
         }
-        System.out.println("Nie znaleziono");
         return null;
     }
 }
