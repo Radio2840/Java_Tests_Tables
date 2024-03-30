@@ -15,7 +15,7 @@ Main {
         System.out.println("wciśnij enter aby zacząć");
         s.nextLine();
 
-        int loop_n = 50000;
+        int loop_n = 10000;
 
         System.out.println("generowanie danych..");
 
