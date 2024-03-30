@@ -14,14 +14,14 @@ Main {
         System.out.println("wciśnij enter aby zacząć");
         s.nextLine();
 
-        int loop_n = 10000;
+        int loop_n = 100000;
 
         System.out.println("generowanie danych..");
 
         int[] data = new int[loop_n];
         Random rand = new Random();
         for (int i = 0; i < loop_n; i++) {
-            data[i] = rand.nextInt(10000);
+            data[i] = rand.nextInt(100000);
         }
         sleep(1000);
 
