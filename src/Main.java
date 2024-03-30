@@ -15,7 +15,7 @@ Main {
         System.out.println("wciśnij enter aby zacząć");
         s.nextLine();
 
-        int loop_n = 1000;
+        int loop_n = 50000;
 
         System.out.println("generowanie danych..");
 
@@ -28,13 +28,13 @@ Main {
 
         System.out.println("\ndodawianie..");
 
-        SingleLinkedList list_1 = new SingleLinkedList();
-        int exc_time = measureTime(list_1,"add",data);
-        System.out.println("lista jednokierunkowa: "+exc_time+"ms");
+        SingleLinkedList singleLinkedList = new SingleLinkedList();
+        int exc_time = measureTime(singleLinkedList,"add",data);
+        System.out.println("listajednokierunkowa: "+exc_time+"ms");
 
-        DoubleLinkedList list_2 = new DoubleLinkedList();
-        exc_time = measureTime(list_2,"add",data);
-        System.out.println("lista dwukierunkowa: "+exc_time+"ms");
+        DoubleLinkedList doubleLinkedList = new DoubleLinkedList();
+        exc_time = measureTime(doubleLinkedList,"add",data);
+        System.out.println("listadwukierunkowa: "+exc_time+"ms");
 
         ArrayList<Integer> arrayList = new ArrayList<>();
         exc_time = measureTime(arrayList, "add", data);
@@ -43,13 +43,26 @@ Main {
 
         System.out.println("\nwyszukiwanie..");
 
-        exc_time = measureTime(list_1,"search",data);
-        System.out.println("lista jednokierunkowa: "+exc_time+"ms");
+        exc_time = measureTime(singleLinkedList,"search",data);
+        System.out.println("listajednokierunkowa: "+exc_time+"ms");
 
-        exc_time = measureTime(list_2,"search",data);
-        System.out.println("lista dwukierunkowa: "+exc_time+"ms");
+        exc_time = measureTime(doubleLinkedList,"search",data);
+        System.out.println("listadwukierunkowa: "+exc_time+"ms");
 
         exc_time = measureTime(arrayList, "contains", data);
+        System.out.println("ArrayList: "+exc_time+"ms");
+
+
+
+        System.out.println("\nusuwanie..");
+
+        exc_time = measureTime(singleLinkedList,"remove",data);
+        System.out.println("listajednokierunkowa: "+exc_time+"ms");
+
+        exc_time = measureTime(doubleLinkedList,"remove",data);
+        System.out.println("listadwukierunkowa: "+exc_time+"ms");
+
+        exc_time = measureTime(arrayList, "remove", data);
         System.out.println("ArrayList: "+exc_time+"ms");
         
     }
