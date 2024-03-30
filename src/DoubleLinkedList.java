@@ -38,19 +38,22 @@ public class DoubleLinkedList {
     }
     // removing one element of the list
     public void remove(int value) {
-        if (head.value == value) {
-            head = head.nextNode;
-            head.previousNode = null;
-            return;
-        }
-        ListNode2 current = head;
-        while (current.nextNode != null) {
-            if (current.nextNode.value == value) {
-                current.nextNode = current.nextNode.nextNode;
-                current.nextNode.previousNode = current;
-                return;
-            }
-            current = current.nextNode;
+            ListNode2 current = head;
+            while (current != null) {
+                if(current.value == value) {
+                    if(current.previousNode != null){
+                        current.previousNode.nextNode = current.nextNode;
+                    }
+                    else {
+                        head = current.nextNode;
+                    }
+                    if (current.nextNode != null){
+                        current.nextNode.previousNode = current.previousNode;
+                    }
+                    break;
+                }
+                current = current.nextNode;
+
         }
     }
     // searching for value in one of the nodes in the two-way list.

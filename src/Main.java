@@ -10,7 +10,6 @@ import java.lang.reflect.Method;
 public class
 Main {
     public static void main(String[] args) throws InterruptedException {
-
         Scanner s = new Scanner(System.in);
         System.out.println("wciśnij enter aby zacząć");
         s.nextLine();
@@ -22,7 +21,7 @@ Main {
         int[] data = new int[loop_n];
         Random rand = new Random();
         for (int i = 0; i < loop_n; i++) {
-            data[i] = rand.nextInt(1000);
+            data[i] = rand.nextInt(10000);
         }
         sleep(1000);
 
@@ -67,7 +66,7 @@ Main {
         
     }
     public static int measureTime(Object instance, String method_str, int[] data) {
-        // znalezienie funkcji za pomocą stringa
+        // finding function with string reference
         Method method;
         try {
             Class<?> clazz = instance.getClass();
@@ -81,7 +80,7 @@ Main {
             return 0;
         }
 
-        // wykonywanie podanej funkcji
+        // performing finded function
         long start_time = System.currentTimeMillis();
         try{
             for (int d: data) {
