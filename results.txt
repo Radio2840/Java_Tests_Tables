@@ -1,0 +1,14 @@
+DODAWANIE
+lista jednokierunkowa: 8869ms
+lista dwukierunkowa: 8993ms
+ArrayList: 8ms
+
+WYSZUKIWANIE
+lista jednokierunkowa: 5456ms
+lista dwukierunkowa: 6718ms
+ArrayList: 2162ms
+
+USUWANIE
+lista jednokierunkowa: 4ms
+lista dwukierunkowa: 6ms
+ArrayList: 532ms
